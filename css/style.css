@@ -619,12 +619,16 @@ a:hover {
     }
 
     .quotes .arab {
-        width: 80%;
+        width: 50%;
         align-self: center;
     }
 
+    .arab .isi {
+        font-size: 1.5rem;
+    }
+
     .quotes .arti {
-        width: 80%;
+        width: 50%;
         align-self: center;
     }
 
