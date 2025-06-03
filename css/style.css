@@ -126,6 +126,12 @@ section {
     width: 100%;
 }
 
+.acara .opsi {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
 
 /* Nama Mempelai */
 .nama {
@@ -376,6 +382,7 @@ section {
     height: auto;
     margin: 8px 0;
     display: flex;
+    margin-bottom: 2rem;
     justify-content: space-between;
 }
 
@@ -710,29 +717,43 @@ a:hover {
 
 @media screen and (max-width: 380px) {
     .opening .sigma {
-      margin-bottom: 3rem;
+        margin-bottom: 3rem;
     }
 
     .opening button {
-      margin-bottom: 3rem;
+        margin-bottom: 3rem;
     }
 
     .opening .b-g {
-      margin: 0;
+        margin: 0;
     }
 
     .quotes .arab {
-      width: 250px;
-      min-width: 200px;
+        width: 250px;
+        min-width: 200px;
     }
 
     .quotes .arti {
-      width: 250px;
-      min-width: 200px;
+        width: 250px;
+        min-width: 200px;
     }
 
     #pemelai .nama {
-      width: 250px;
-      align-self: center;
+        width: 250px;
+        align-self: center;
+    }
+
+    .acara .opsi {
+        justify-content: end;
+    }
+
+
+    iframe {
+        width: 250px;
+        height: 160px;
+    }
+
+    .countdown {
+        width: 250px;
     }
 }
