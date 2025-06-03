@@ -1,0 +1,699 @@
+* {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-width: 300px;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.opening {
+    width: 100%;
+    height: 100dvh;
+    background-image: url(../assets/decoration/background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    top: 0;
+    padding: 0 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        margin: 0;
+    }
+
+    .yth {
+        text-align: end;
+        font-size: large;
+        font-family: sans-serif;
+        margin: 0;
+    }
+
+    .sigma {
+        text-align: center;
+        font-size: xx-large;
+        color: #5179A8;
+        margin-bottom: 6rem;
+    }
+}
+
+.opening-isi {
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 700px;
+    width: 100%;
+    z-index: 20;
+}
+
+.opening h3 {
+    font-size: x-large;
+    margin: 0;
+}
+
+.opening .b-g {
+    font-size: 72px;
+    margin: 0 0 20px 0;
+    color: #5179A8;
+    line-height: 100%;
+    font-weight: 600;
+}
+
+.opening button {
+    font-size: large;
+    background-color: #5179A8;
+    padding: 12px 16px;
+    color: white;
+    border: none;
+    margin-bottom: 6rem;
+    cursor: pointer;
+}
+
+.opening .dekorasi {
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 700px;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+
+.content {
+    background-color: #E7ECF1;
+    position: relative;
+    margin-top: 100vh;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    padding-top: 1rem;
+}
+
+/* Section Container */
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 300px;
+    max-width: 850px;
+    padding: 2rem;
+    row-gap: 1.2rem;
+
+    /* judul section */
+
+    h1 {
+        font-size: 50px;
+        font-family: "Great Vibes", cursive;
+        margin-bottom: 2rem;
+    }
+}
+
+#acara {
+    width: 100%;
+}
+
+
+/* Nama Mempelai */
+.nama {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.nama p {
+    margin: 0;
+    display: inline;
+    font-size: 38px;
+    line-height: 100%;
+    font-weight: 550;
+}
+
+.nama hr {
+    width: 100%;
+    color: black;
+    align-self: flex-end;
+    margin: 0 0 16px 0;
+    border: 1px solid black;
+}
+
+/* Membalik urutan info dan foto */
+.calon.reverse {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+
+/* Bini (Wrapper Konten Mempelai) */
+.calon {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* penting untuk bisa wrap */
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    /* spasi antar elemen */
+}
+
+.foto-wrapper,
+.info {
+    flex: 1 1 350px;
+    /* basis 350px dan bisa mengecil/membesar */
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Foto Wrapper */
+.foto-wrapper {
+    margin-top: 2rem;
+    position: relative;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Foto Background */
+.foto-bg {
+    background-size: 100%;
+    background-position: center;
+    width: 80%;
+    height: 80%;
+    background-repeat: no-repeat;
+    border-radius: 180px;
+}
+
+/* Foto Border */
+.foto-border {
+    background-image: url(../assets/decoration/border\ \(2\).svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Info Mempelai */
+.info p {
+    margin: 0 0 15px 0;
+    font-size: large;
+}
+
+/* Sosial Media */
+.sosmed {
+    height: 40px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* Ikon Media Sosial */
+.media {
+    height: 40px;
+    width: 40px;
+    border: 1px solid #203043;
+    display: grid;
+    place-content: center;
+    border-radius: 8px;
+}
+
+.quotes {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 782px;
+}
+
+.quotes .arab {
+    width: 80%;
+    background-color: #203043;
+    height: auto;
+    align-self: flex-end;
+    margin-bottom: 3rem;
+    text-align: end;
+    padding: 20px;
+    margin-top: 3rem;
+}
+
+.arab .isi {
+    font-family: sans-serif;
+    color: #E7ECF1;
+    font-size: 2rem;
+    line-height: 160%;
+}
+
+.quotes .arti {
+    width: 80%;
+    background-color: #203043;
+    height: auto;
+    align-self: flex-start;
+    margin-bottom: 3rem;
+    padding: 20px;
+}
+
+.arti .isi {
+    font-family: sans-serif;
+    color: #E7ECF1;
+    font-size: 1rem;
+    line-height: 160%;
+    text-align: start;
+    padding: 0 20px;
+}
+
+.quotes .qs {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    align-self: center;
+    width: 100%;
+}
+
+.qs hr {
+    width: 100%;
+    color: black;
+    align-self: flex-end;
+    margin: 0 0 10px 0;
+    border: black solid 1px;
+}
+
+.qs p {
+    margin: 0;
+    font-size: x-large;
+    line-height: 100%;
+    font-weight: 550;
+    width: 160px;
+}
+
+.acara {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "akad resepsi"
+        "livestream livestream";
+    gap: 20px;
+
+    /* Perhatikan bagian ini: */
+    width: 100%;
+
+    .isi {
+        padding: 30px 0;
+    }
+}
+
+.akad {
+    grid-area: akad;
+    background-color: #f0f0f0;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.resepsi {
+    grid-area: resepsi;
+    background-color: #f0f0f0;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.livestream {
+    grid-area: livestream;
+    background-color: #e0e0e0;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    place-items: center;
+}
+
+.akad,
+.resepsi,
+.livestream {
+    h2 {
+        font-size: x-large;
+        margin: 0 0 12px 0;
+        font-weight: bold;
+        line-height: 100%;
+    }
+
+    p {
+        margin: 4px 0 0 0;
+        font-size: large;
+    }
+}
+
+.countdown {
+    width: 400px;
+    height: auto;
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.countdown .box {
+    height: 80px;
+    width: 80px;
+    background-color: rgba(32, 48, 67, 0.68);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 20px 0;
+    row-gap: 6px;
+    border-radius: 6px;
+}
+
+.countdown .box p {
+    font-size: xx-large;
+    margin: 0 0 0 0;
+    color: #E7ECF1;
+    line-height: 100%;
+    font-weight: bolder;
+}
+
+.countdown .box span {
+    font-size: large;
+    margin: 0 auto 6px auto;
+    color: #E7ECF1;
+    line-height: 100%;
+    font-weight: bold;
+}
+
+.livestream button {
+    font-size: large;
+    background-color: #203043;
+    padding: 4px 16px;
+    color: #E7ECF1;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.video {
+    width: 100%;
+    height: 400px;
+}
+
+.video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galeri {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    padding: 1.2rem;
+}
+
+.galeri .dua {
+    width: 66%;
+    overflow: hidden;
+    padding: 4px;
+
+
+}
+
+.galeri .satu {
+    width: 33%;
+    overflow: hidden;
+    padding: 4px;
+}
+
+.galeri .gambar>div {
+    overflow: hidden;
+    width: 100%;
+    height: 120px;
+    border: 1px solid #203043;
+}
+
+.galeri .gambar>div>img {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#rsvp>button {
+    width: 100%;
+    background-color: #203043;
+    padding: 10px 0;
+    color: #E7ECF1;
+    border-radius: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 300;
+}
+
+label {
+    text-align: start;
+}
+
+.thanks {
+    height: auto;
+    width: 90%;
+    text-align: center;
+    margin: 0;
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.thanks h1 {
+    margin: 0;
+    color: var(--gelap);
+}
+
+.thanks p {
+    line-height: 120%;
+    color: var(--gelap);
+}
+
+.thanks p:nth-child(2) {
+    margin: 10px 0 23.5px 0;
+}
+
+.thanks p:nth-child(4) {
+    margin: 23.5px 0 24px 0;
+}
+
+.thanks hr {
+    width: 246px;
+    background-color: black;
+}
+
+.thanks .keluarga {
+    display: flex;
+    text-align: center;
+    min-height: 150px;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0 auto 0 auto;
+    gap: 10px;
+}
+
+.thanks .keluarga div {
+    width: 80%;
+    background-color: #203043;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.keluarga p {
+    margin: 0;
+    color: #E7ECF1;
+}
+
+.keluarga h5 {
+    font-family: "Great Vibes";
+    font-size: xx-large;
+    line-height: 20px;
+    margin: 1.5rem 0 0.75rem 0;
+    margin: 8;
+    color: #E7ECF1;
+}
+
+a {
+    border-radius: 12px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.icon {
+    width: 60px;
+    /* Menentukan ukuran ikon */
+    height: 60px;
+    margin: 10px;
+    /* Memberikan jarak antar ikon */
+    padding: 10px;
+    opacity: 1;
+}
+
+/* Efek hover untuk memperbesar ikon */
+
+a:hover {
+    transform: scale(1.2);
+    /* Membesarkan ikon saat dihover */
+    filter: brightness(1.2);
+    /* Meningkatkan kecerahan ikon */
+}
+
+/* Mengatur ikon dalam flexbox agar rapi */
+.icon-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: gray;
+    border-radius: 40px;
+    padding: 0.1rem 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 786px) {
+    .opening {
+        background-size: auto 100%;
+
+        div {
+            width: 90%;
+        }
+    }
+
+    .quotes .arab {
+        width: 80%;
+        align-self: center;
+    }
+
+    .quotes .arti {
+        width: 80%;
+        align-self: center;
+    }
+
+    .qs {
+        display: flex;
+        justify-content: center;
+    }
+
+    .qs p {
+        position: relative;
+        padding: 0 1rem;
+        /* beri ruang kiri-kanan agar garis tidak menimpa teks */
+    }
+
+    .qs p::before,
+    .qs p::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 150px;
+        height: 1px;
+        background-color: #000;
+        /* bisa diganti sesuai warna garis yang diinginkan */
+    }
+
+    .qs p::before {
+        left: -160px;
+        /* sesuaikan agar sejajar rapi */
+    }
+
+    .qs p::after {
+        right: -160px;
+    }
+
+    .qs hr {
+        display: none;
+    }
+
+    .acara {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "akad"
+            "livestream"
+            "resepsi";
+        max-width: 782px;
+        min-width: 400px;
+    }
+
+    iframe {
+        width: 340px;
+        height: 250px;
+    }
+
+    .countdown {
+        width: 340px;
+    }
+
+    .thanks .keluarga {
+        flex-direction: column;
+        align-items: center;
+        height: 300px;
+
+        div {
+            height: 100%;
+        }
+    }
+
+    .icon {
+        width: 50px;
+        height: 50px;
+    }
+}
