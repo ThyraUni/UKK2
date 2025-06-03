@@ -41,7 +41,6 @@ body {
     .sigma {
         text-align: center;
         font-size: xx-large;
-        color: #5179A8;
         margin-bottom: 6rem;
     }
 }
@@ -681,7 +680,7 @@ a:hover {
             "livestream"
             "resepsi";
         max-width: 782px;
-        min-width: 400px;
+        min-width: 200px;
     }
 
     iframe {
@@ -709,6 +708,31 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 250px) {
-    
+@media screen and (max-width: 450px) {
+    .opening .sigma {
+      margin-bottom: 3rem;
+    }
+
+    .opening button {
+      margin-bottom: 3rem;
+    }
+
+    .opening .b-g {
+      margin: 0;
+    }
+
+    .quotes .arab {
+      width: 250px;
+      min-width: 200px;
+    }
+
+    .quotes .arti {
+      width: 250px;
+      min-width: 200px;
+    }
+
+    #pemelai .nama {
+      width: 250px;
+      align-self: center;
+    }
 }
