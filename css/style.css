@@ -708,7 +708,7 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 380px) {
     .opening .sigma {
       margin-bottom: 3rem;
     }
