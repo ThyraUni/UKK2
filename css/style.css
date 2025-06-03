@@ -619,6 +619,12 @@ a:hover {
         }
     }
 
+    .opening .yth {
+        display: block;
+        width: 100%;
+        backdrop-filter: blur(4px);
+    }
+
     .quotes .arab {
         width: 50%;
         align-self: center;
