@@ -46,6 +46,27 @@ window.onclick = function (event) {
     }
 }
 
+document.getElementById("rsvpForm").addEventListener("submit", function (event) {
+    event.preventDefault(); 
+
+    const nama = document.getElementById("nama").value;
+    const grup = document.getElementById("grup").value;
+    const whatsapp = document.getElementById("whatsapp").value;
+    const kehadiran = document.getElementById("kehadiran").value;
+    const ucapan = document.getElementById("ucapan").value;
+
+    console.log("Data RSVP:");
+    console.log("Nama:", nama);
+    console.log("Grup:", grup);
+    console.log("No WA:", whatsapp);
+    console.log("Kehadiran:", kehadiran);
+    console.log("Ucapan:", ucapan);
+
+    alert("Terima kasih, " + nama + ", ucapanmu telah dikirim!");
+
+    event.target.reset();
+});
+
 function salinKado() {
     const select = document.getElementById("kado");
     const notif = document.getElementById("salinNotif");
@@ -81,18 +102,12 @@ const iconPlay = document.getElementById('icon-play');
 const iconPause = document.getElementById('icon-pause');
 
 openBtn.addEventListener('click', () => {
-    // sembunyikan opening
-
-    // tampilkan content
     content.classList.remove('hidden');
 
-    // mainkan audio
     audio.play();
 
-    // scroll smooth ke #pemelai
     pemelai.scrollIntoView({ behavior: 'smooth' });
 
-    // update icon play/pause
     iconPlay.classList.add('hidden');
     iconPause.classList.remove('hidden');
 });
