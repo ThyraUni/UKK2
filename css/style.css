@@ -756,4 +756,9 @@ a:hover {
     .countdown {
         width: 250px;
     }
+
+    .countdown .box {
+        height: 60px;
+        width: 60px;
+    }
 }
