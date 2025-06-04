@@ -743,11 +743,6 @@ a:hover {
         align-self: center;
     }
 
-    .acara .opsi {
-        justify-content: end;
-    }
-
-
     iframe {
         width: 250px;
         height: 160px;
